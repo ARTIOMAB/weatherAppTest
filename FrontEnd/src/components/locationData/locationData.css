@@ -1,0 +1,42 @@
+.location-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 30%;
+}
+
+.location-box {
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-template-rows: 20px 40px;
+    width: 80%;
+    height: 40%;
+    font: normal normal 300 30px/44px Heebo;
+    color: #707070;
+    font-size: 14px;
+}
+
+.location-box > span:nth-child(3) {
+    grid-column: 1 / -1; 
+}
+@media only screen and (max-width: 1200px) {
+    .location-card{
+        position: absolute;
+        width: 100%;
+    }
+    .location-box {
+        display: grid;
+        grid-template-rows: 40px 60px;
+        font-size: 30px;
+        margin-bottom: 20vh;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .location-box {
+        grid-template-rows: 20px 40px;
+        font-size: 16px;
+    }
+    
+}
